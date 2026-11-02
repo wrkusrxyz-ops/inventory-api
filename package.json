@@ -1,0 +1,14 @@
+{
+  "name": "inventory-api",
+  "version": "1.0.0",
+  "description": "REST API for managing warehouse inventory items",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["inventory", "express", "api"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
