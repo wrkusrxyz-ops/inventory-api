@@ -48,6 +48,15 @@ const items = [
   },
 ];
 
+// GET /health - service health check
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+  });
+});
+
 // GET /items - list all inventory items
 app.get("/items", (req, res) => {
   res.json(items);

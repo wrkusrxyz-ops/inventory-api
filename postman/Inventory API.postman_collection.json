@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "ad65182c-a695-47a3-8980-899e2a80754f",
+    "name": "Inventory API",
+    "description": "Requests for the inventory-api Express service.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59027768",
+    "_collection_link": "https://go.postman.co/collection/59027768-ad65182c-a695-47a3-8980-899e2a80754f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/items",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "items"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get Items",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/items",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "items"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "549"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"225-LhZHHsOAw85SDTTbInqo9Rm6aIE\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Nov 2026 11:24:34 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"sku\": \"WH-1001\",\n        \"name\": \"Pallet Jack\",\n        \"category\": \"Equipment\",\n        \"quantity\": 4,\n        \"location\": \"Aisle A1\"\n    },\n    {\n        \"id\": 2,\n        \"sku\": \"WH-1002\",\n        \"name\": \"Shrink Wrap Roll\",\n        \"category\": \"Packaging\",\n        \"quantity\": 120,\n        \"location\": \"Aisle B3\"\n    },\n    {\n        \"id\": 3,\n        \"sku\": \"WH-1003\",\n        \"name\": \"Barcode Scanner\",\n        \"category\": \"Electronics\",\n        \"quantity\": 15,\n        \"location\": \"Aisle C2\"\n    },\n    {\n        \"id\": 4,\n        \"sku\": \"WH-1004\",\n        \"name\": \"Safety Helmet\",\n        \"category\": \"Safety\",\n        \"quantity\": 60,\n        \"location\": \"Aisle D1\"\n    },\n    {\n        \"id\": 5,\n        \"sku\": \"WH-1005\",\n        \"name\": \"Corrugated Box (Medium)\",\n        \"category\": \"Packaging\",\n        \"quantity\": 450,\n        \"location\": \"Aisle B1\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "health",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "77"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"4d-jvDaNlCa1TetSdJT4hc+2S5lNkA\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 02 Nov 2026 13:13:40 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": \"ok\",\n    \"uptime\": 342.694917166,\n    \"timestamp\": \"2026-11-02T13:13:40.528Z\"\n}"
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}

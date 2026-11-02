@@ -15,5 +15,6 @@ The API runs at `http://localhost:3000`.
 
 | Method | Endpoint     | Description                 |
 | ------ | ------------ | --------------------------- |
+| GET    | `/health`    | Service health check        |
 | GET    | `/items`     | List all inventory items    |
 | GET    | `/items/:id` | Get a single item by its ID |
